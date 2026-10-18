@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Fixed by Hicks Lawn Care",
+  "short_name": "FBH",
+  "description": "Fixed by Hicks Lawn Care LLC \u2014 Get it fixed by Hicks.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d2b19",
+  "theme_color": "#0d2b19",
+  "icons": [
+    {
+      "src": "/assets/fbh-home-192-v1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/fbh-home-512-v1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
