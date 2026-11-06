@@ -97,7 +97,10 @@
   const copyStatus = document.getElementById('estimate-copy-status');
   form.hidden = false;
   document.getElementById('brush-estimate-link').addEventListener('click', function () {
-    document.getElementById('estimate-service').value = 'Brush clearing';
+    const service = document.getElementById('estimate-service');
+    if (service.value === 'Brush clearing') return;
+    service.value = 'Brush clearing';
+    service.dispatchEvent(new Event('input', { bubbles: true }));
   });
   function buildEstimateMessage(values) {
     const lines = [
