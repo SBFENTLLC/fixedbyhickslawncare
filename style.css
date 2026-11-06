@@ -17,7 +17,19 @@
 .brush-stamp{width:clamp(64px,10vw,96px);height:auto;flex:none;border-radius:50%}
 .brush-price{background:var(--forest);color:white;border-left:4px solid var(--gold);border-radius:10px;padding:clamp(16px,3vw,28px);margin:24px 0 30px}
 .brush-price p{max-width:65ch;margin:0 0 12px}
-.brush-price-label strong{color:var(--lime);font-size:2rem;line-height:1.15;margin-right:.2em}
+.brush-price h4{font-size:1.5rem;margin:0 0 16px}
+.brush-price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 16px}
+.brush-price-grid>div{background:#ffffff10;border:1px solid #ffffff35;border-radius:8px;padding:14px}
+.brush-price-grid dt{font-weight:bold;margin-bottom:6px}
+.brush-price-grid dd{margin:0}
+.brush-price-grid strong,.brush-haul-price strong{display:block;color:var(--lime);font-size:1.35rem;line-height:1.2;margin-bottom:6px}
+.brush-price-grid p,.brush-haul-price p:last-child{margin:0}
+.brush-haul-price{border-top:1px solid #ffffff35;border-bottom:1px solid #ffffff35;padding:14px 0;margin-bottom:14px}
+.brush-haul-price h5{font-size:1rem;margin:0 0 6px}
+.brush-haul-price strong{display:inline-block;margin:0 0 0 .35em}
+.brush-estimate-options{min-width:0;margin:0;border:1px solid #cbd6bf;border-radius:8px;padding:12px}
+.brush-estimate-options legend{font-weight:bold;padding:0 4px}
+@media(max-width:720px){.brush-price-grid{grid-template-columns:1fr}}
 .brush-project .work-title h4{font-size:1.25rem;margin:0}
 .brush-videos{display:grid;grid-template-columns:repeat(2,minmax(0,240px));gap:16px;justify-content:center;margin-top:22px}
 .brush-videos figure{margin:0;min-width:0}
